@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		17708EF421F1AFF7008540C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17708EF321F1AFF7008540C8 /* AppDelegate.m */; };
-		17708EF721F1AFF7008540C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17708EF621F1AFF7008540C8 /* ViewController.m */; };
 		17708EFA21F1AFF7008540C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17708EF821F1AFF7008540C8 /* Main.storyboard */; };
 		17708EFC21F1AFF8008540C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17708EFB21F1AFF8008540C8 /* Assets.xcassets */; };
 		17708EFF21F1AFF8008540C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17708EFD21F1AFF8008540C8 /* LaunchScreen.storyboard */; };
 		17708F0221F1AFF8008540C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17708F0121F1AFF8008540C8 /* main.m */; };
 		17708F0C21F1AFF8008540C8 /* GesturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17708F0B21F1AFF8008540C8 /* GesturesTests.m */; };
 		17708F1721F1AFF8008540C8 /* GesturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17708F1621F1AFF8008540C8 /* GesturesUITests.m */; };
+		17708F2621F1B31A008540C8 /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17708F2521F1B31A008540C8 /* PanViewController.m */; };
+		17708F2921F1B326008540C8 /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17708F2821F1B326008540C8 /* TapViewController.m */; };
+		17708F2C21F1BF7B008540C8 /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17708F2B21F1BF7B008540C8 /* PinchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		17708EEF21F1AFF7008540C8 /* Gestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17708EF221F1AFF7008540C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17708EF321F1AFF7008540C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		17708EF521F1AFF7008540C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		17708EF621F1AFF7008540C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		17708EF921F1AFF7008540C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17708EFB21F1AFF8008540C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17708EFE21F1AFF8008540C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		17708F1221F1AFF8008540C8 /* GesturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GesturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17708F1621F1AFF8008540C8 /* GesturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturesUITests.m; sourceTree = "<group>"; };
 		17708F1821F1AFF8008540C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17708F2421F1B31A008540C8 /* PanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
+		17708F2521F1B31A008540C8 /* PanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		17708F2721F1B326008540C8 /* TapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapViewController.h; sourceTree = "<group>"; };
+		17708F2821F1B326008540C8 /* TapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapViewController.m; sourceTree = "<group>"; };
+		17708F2A21F1BF7B008540C8 /* PinchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		17708F2B21F1BF7B008540C8 /* PinchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,12 @@
 			children = (
 				17708EF221F1AFF7008540C8 /* AppDelegate.h */,
 				17708EF321F1AFF7008540C8 /* AppDelegate.m */,
-				17708EF521F1AFF7008540C8 /* ViewController.h */,
-				17708EF621F1AFF7008540C8 /* ViewController.m */,
+				17708F2421F1B31A008540C8 /* PanViewController.h */,
+				17708F2521F1B31A008540C8 /* PanViewController.m */,
+				17708F2721F1B326008540C8 /* TapViewController.h */,
+				17708F2821F1B326008540C8 /* TapViewController.m */,
+				17708F2A21F1BF7B008540C8 /* PinchViewController.h */,
+				17708F2B21F1BF7B008540C8 /* PinchViewController.m */,
 				17708EF821F1AFF7008540C8 /* Main.storyboard */,
 				17708EFB21F1AFF8008540C8 /* Assets.xcassets */,
 				17708EFD21F1AFF8008540C8 /* LaunchScreen.storyboard */,
@@ -262,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17708EF721F1AFF7008540C8 /* ViewController.m in Sources */,
+				17708F2621F1B31A008540C8 /* PanViewController.m in Sources */,
 				17708F0221F1AFF8008540C8 /* main.m in Sources */,
+				17708F2C21F1BF7B008540C8 /* PinchViewController.m in Sources */,
+				17708F2921F1B326008540C8 /* TapViewController.m in Sources */,
 				17708EF421F1AFF7008540C8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
